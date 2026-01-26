@@ -10,3 +10,8 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 8080
+  template:
+    spec:
+      volumes:
+        - name: cache-volume
+          emptyDir: {}
